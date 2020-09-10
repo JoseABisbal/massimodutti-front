@@ -1,0 +1,68 @@
+@import "colors.scss";
+@import "variables.scss";
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  background-color: $background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary;
+    margin: 0 !important;
+}
+
+a {
+    cursor: pointer;
+    font-weight: bold;
+    &:hover {
+        color: $black !important;
+    }
+}
+
+.btn__primary {
+    background-color: $black;
+    border: solid 1px $black;
+    color: $white;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 20px;
+    transition: 0.5s all;
+    min-width: 140px;
+    &:disabled {
+        cursor: not-allowed;
+    }
+    &:hover:not(:disabled) {
+        border-color: #414141 !important;
+        background-color: #414141 !important;
+    }
+}
+
+.btn__secondary {
+    background-color: $primary;
+    border: solid 0px $black;
+    color: $white;
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 20px;
+    transition: 0.5s all;
+    min-width: 140px;
+    &:disabled {
+        cursor: not-allowed;
+    }
+    &:hover:not(:disabled) {
+        border-color: $primary !important;
+        color: $primary !important;
+    }
+}

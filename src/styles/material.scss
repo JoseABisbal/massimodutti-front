@@ -1,0 +1,457 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import "~@angular/material/theming";
+@import "colors.scss";
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+$md-prim: (
+  50: #e7e7e7,
+  100: #c2c2c2,
+  200: #999999,
+  300: #707070,
+  400: #525252,
+  500: #333333,
+  600: #2e2e2e,
+  700: #272727,
+  800: #202020,
+  900: #141414,
+  A100: #ef6e6e,
+  A200: #ea4040,
+  A400: #f60000,
+  A700: #dd0000,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #ffffff,
+    A400: #ffffff,
+    A700: #ffffff,
+  ),
+);
+$md-accent: (
+  50: #f9e0e6,
+  100: #f1b3c1,
+  200: #e78098,
+  300: #dd4d6e,
+  400: #d6264f,
+  500: #cf0030,
+  600: #ca002b,
+  700: #c30024,
+  800: #bd001e,
+  900: #b20013,
+  A100: #ffdbdd,
+  A200: #ffa8ad,
+  A400: #ff757d,
+  A700: #ff5c64,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$md-warn: (
+  50: #f9e0e6,
+  100: #f1b3c1,
+  200: #e78098,
+  300: #dd4d6e,
+  400: #d6264f,
+  500: #cf0030,
+  600: #ca002b,
+  700: #c30024,
+  800: #bd001e,
+  900: #b20013,
+  A100: #ffdbdd,
+  A200: #ffa8ad,
+  A400: #ff757d,
+  A700: #ff5c64,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$audiprestige-frontend-primary: mat-palette($md-prim);
+$audiprestige-frontend-accent: mat-palette($md-accent, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$audiprestige-frontend-warn: mat-palette($md-warn);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$audiprestige-frontend-theme: mat-light-theme(
+  $audiprestige-frontend-primary,
+  $audiprestige-frontend-accent,
+  $audiprestige-frontend-warn
+);
+$custom-typography: mat-typography-config(
+  $font-family: "Audi",
+);
+@include angular-material-typography($custom-typography);
+// Typography
+// $custom-typography: mat-typography-config(
+//   $font-family: "Audi",
+//   $display-4: mat-typography-level(112px, 112px, 300),
+//   $display-3: mat-typography-level(56px, 56px, 400),
+//   $display-2: mat-typography-level(45px, 48px, 400),
+//   $display-1: mat-typography-level(34px, 40px, 400),
+//   $headline: mat-typography-level(52px, 60px, 700),
+//   $title: mat-typography-level(36px, 44px, 500),
+//   $subheading-2: mat-typography-level(24px, 32px, 400),
+//   $subheading-1: mat-typography-level(20px, 24px, 400),
+//   $body-2: mat-typography-level(14px, 20px, 500),
+//   $body-1: mat-typography-level(16px, 24px, 400),
+//   $caption: mat-typography-level(14px, 24px, 400),
+//   $button: mat-typography-level(14px, 18px, 500),
+//   $input: mat-typography-level(16px, 1.125, 400),
+// );
+// @include mat-base-typography($custom-typography);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($audiprestige-frontend-theme);
+
+// Input fields
+.mat-hint {
+  color: $secondary;
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: "Audi";
+  margin-top: 5px;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+  font-size: 14px;
+  font-family: "Audi";
+  color: $primary;
+}
+.mat-form-field-subscript-wrapper {
+  overflow: visible !important;
+}
+.mat-select-placeholder {
+  font-family: "Audi";
+  color: $secondary;
+  font-weight: bold !important;
+}
+
+.mat-form-field {
+  font-family: "Audi";
+  color: $primary;
+  line-height: 1.325 !important;
+}
+
+// Menu
+
+.mat-menu-panel {
+  border-radius: 0 !important;
+}
+.mat-menu-content:not(:empty) {
+  padding: 0 !important;
+}
+.mat-menu-item.inverted {
+  padding: 0 16px !important;
+  padding-left: 32px !important;
+  &:after {
+    right: 0 !important;
+    left: 16px;
+    transform: translateY(-50%) rotate(180deg) !important;
+  }
+}
+
+// Router
+
+.router-link-active {
+  color: $white !important;
+}
+
+// Tabs
+
+.mat-tab-nav-bar,
+.mat-tab-header {
+  border-bottom: none !important;
+}
+.mat-tab-label {
+  background-color: transparent;
+  color: $gray;
+  font-family: "Audi";
+  font-size: 14px;
+  opacity: 1 !important;
+  margin-right: 24px;
+  padding: 0px 24px;
+  justify-content: left !important;
+  &:last-child {
+    margin-right: 0px !important;
+  }
+}
+
+.mat-tab-body-content {
+  overflow: initial !important;
+}
+.mat-tab-body {
+  overflow: hidden !important;
+}
+.mat-tab-label.mat-tab-label-active {
+  background-color: transparent;
+  color: $primary !important;
+}
+
+// Dialog
+
+.mat-dialog-container {
+  border-radius: 0 !important;
+  max-height: 90vh !important;
+}
+.cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+// List
+
+.mat-nav-list a {
+  text-decoration: none !important;
+}
+
+// Tooltip
+
+.mat-tooltip {
+  font-family: "Audi";
+  background-color: $white;
+  font-size: 14px;
+  color: $primary !important;
+  padding: 15px !important;
+  @include border-shadow();
+}
+
+.mat-snack-bar-container {
+  border-radius: 0 !important;
+  background-color: $primary !important;
+}
+
+.mat-radio-button ~ .mat-radio-button {
+  font-size: 14px;
+}
+
+// Switch
+
+.mat-slide-toggle-content {
+  font-family: "Audi";
+  font-size: 14px;
+  color: $primary;
+}
+
+// Slider
+
+.mat-slider-horizontal .mat-slider-wrapper {
+  left: 14px !important;
+  right: 14px !important;
+}
+.mat-slider-thumb-label {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+// Prefix
+
+.mat-form-field-prefix {
+  bottom: 4px;
+  margin-right: 12px;
+}
+
+// Steper
+
+.mat-step-icon {
+  font-family: "Audi";
+  font-size: 14px;
+  color: $secondary !important;
+}
+.mat-step-label {
+  font-family: "Audi";
+  color: $primary !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+}
+.mat-step-header .mat-step-label.mat-step-label-active {
+  font-family: "Audi";
+}
+.mat-step-header {
+  flex-direction: column;
+}
+.mat-horizontal-stepper-header {
+  padding: 8px 24px !important;
+}
+.mat-stepper-horizontal-line {
+  top: -16px;
+  position: relative;
+}
+.mat-step-header .mat-step-icon {
+  height: 40px !important;
+  width: 40px !important;
+  margin-bottom: 9px;
+  background-color: rgba(226, 226, 226, 0.54);
+  color: $primary !important;
+}
+.mat-step-header .mat-step-icon-selected, .mat-step-header .mat-step-icon-state-done, 
+.mat-step-header .mat-step-icon-state-edit {
+  color: $white !important;
+  background-color: $primary;
+}
+
+@media (max-width: 768px) {
+  .mat-step-text-label {
+    display: none !important;
+  }
+}
+
+.mat-stepper-horizontal,
+.mat-stepper-vertical {
+  background-color: transparent;
+}
+
+// Table
+
+.mat-table {
+  overflow-x: scroll;
+  background-color: transparent !important;
+}
+table {
+  border-collapse: inherit !important;
+}
+.mat-table .mat-header-cell {
+  margin-right: 2%;
+  &:last-child {
+    margin-right: 0 !important;
+  }
+}
+.mat-cell,
+.mat-footer-cell {
+  border-bottom: 1px solid $primary !important;
+  font-family: "Audi";
+}
+.mat-header-cell {
+  font-family: "Audi";
+  font-size: 14px;
+  font-weight: bold;
+  color: $primary;
+  border-top: 2px solid $primary;
+  border-bottom: 1px solid $primary;
+}
+mat-row,
+mat-header-row,
+mat-footer-row {
+  border-bottom-width: 0 !important;
+}
+.mat-header-cell,
+.mat-cell,
+.mat-footer-cell {
+  padding: 0 !important;
+  margin-right: 2%;
+  &:last-child {
+    margin-right: 0 !important;
+  }
+  font-family: "Audi";
+  vertical-align: middle !important;
+}
+
+@media (max-width: $screen-md-min) {
+  .mat-header-row,
+  .mat-row {
+    min-width: 800px !important;
+  }
+}
+
+// SIDENAV
+
+.mat-drawer-container {
+  overflow: visible !important;
+}
+
+// CARD
+
+.mat-card-header-text {
+  width: 100%;
+  margin: 0 !important;
+}
+
+
+.timepicker__header {
+  background-color: $secondary !important;
+}
+
+.timepicker-dial__control {
+  font-size: 48px !important;
+}
+
+.clock-face__clock-hand { 
+  background-color: $primary !important;
+}
+
+.timepicker-button {
+  color: $primary !important;
+}
+
+.clock-face__number > span.active {
+  background-color: $primary !important;
+}
+
+.timepicker-dial__item {
+  color: $white !important;
+}
+
+.timepicker-dial__item_active {
+  color: $primary !important;
+}
+
+.timepicker-container {
+  & input {
+    width: 91px;
+  }
+
+  & ngx-material-timepicker-toggle {
+    float: right !important;
+    margin: -15px 0px 0 0;
+    cursor: pointer;
+
+    & svg {
+      fill: $gray;
+    }
+  }
+}

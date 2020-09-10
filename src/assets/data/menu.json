@@ -1,0 +1,158 @@
+[
+    {
+        "name": "Gestionar concesionarios",
+        "roles": [
+            "ROLE_ADMIN",
+            "ROLE_GUEST"
+        ],
+        "childs": [
+            {
+                "id": 1,
+                "name": "Inicio",
+                "icon": "aui-icon-home-large",
+                "route": "/home",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 2,
+                "name": "Chat clientes",
+                "icon": "aui-icon-discussion-large",
+                "route": "/dealers/chat",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 3,
+                "name": "Chat concesionarios",
+                "icon": "aui-icon-discussion-large",
+                "route": "/dealers/chat/dealers",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 4,
+                "name": "Noticias / Eventos",
+                "icon": "aui-icon-news-large",
+                "route": "/dealers/news",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 5,
+                "name": "Carta de servicios",
+                "icon": "aui-icon-documents-large",
+                "route": "/dealers/services",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 6,
+                "name": "Notificaciones",
+                "icon": "aui-icon-announcements-large",
+                "route": "/dealers/notifications",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 7,
+                "name": "Chatbot",
+                "icon": "aui-icon-blog-post-large",
+                "route": "/dealers/chatbot",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 8,
+                "name": "Analytics",
+                "icon": "aui-icon-polls-large",
+                "route": "/dealers/analytics",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 9,
+                "name": "Carrocería",
+                "icon": "aui-icon-bonnet-open-large",
+                "route": "/dealers/bodywork",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            },
+            {
+                "id": 10,
+                "name": "Facturación",
+                "icon": "aui-icon-document-pricelist-euro-large",
+                "route": "/dealers/billing",
+                "roles": [
+                    "ROLE_GUEST",
+                    "ROLE_ADMIN"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Administración",
+        "roles": [
+            "ROLE_ADMIN"
+        ],
+        "childs": [
+            {
+                "id": 1,
+                "name": "Usuarios",
+                "icon": "aui-icon-groups-large",
+                "route": "/administration/users"
+            },
+            {
+                "id": 2,
+                "name": "Concesionarios",
+                "icon": "aui-icon-business-customer-large",
+                "route": "/administration/dealers"
+            },
+            {
+                "id": 3,
+                "name": "Modelos",
+                "icon": "aui-icon-car-large",
+                "route": "/administration/models"
+            },
+            {
+                "id": 4,
+                "name": "Promociones",
+                "icon": "aui-icon-favorite-large",
+                "route": "/administration/promotions"
+            },
+            {
+                "id": 5,
+                "name": "Alertas",
+                "icon": "aui-icon-caution-large",
+                "route": "/administration/alerts"
+            },
+            {
+                "id": 6,
+                "name": "Notificaciones",
+                "icon": "aui-icon-announcements-large",
+                "route": "/administration/notifications",
+                "roles": [
+                    "ROLE_ADMIN"
+                ]
+            }
+        ]
+    }
+]

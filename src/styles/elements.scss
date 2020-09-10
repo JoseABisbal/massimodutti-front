@@ -1,0 +1,141 @@
+@import "colors.scss";
+@import "variables.scss";
+// Texts
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary;
+    margin: 0 !important;
+}
+
+h5,
+h6 {
+    font-family: "Audi";
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: $primary;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+a {
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline !important;
+    transition: 0.2s all;
+    &:hover {
+        color: $black !important;
+    }
+}
+
+// Dividers
+
+hr {
+    color: $secondary;
+}
+
+// Buttons
+
+.btn__primary {
+    background-color: $black;
+    border: solid 1px $black;
+    color: $white;
+    font-family: "Audi";
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 20px;
+    transition: 0.5s all;
+    min-width: 140px;
+    &:disabled {
+        cursor: not-allowed;
+    }
+    &:hover:not(:disabled) {
+        border-color: #414141 !important;
+        background-color: #414141 !important;
+    }
+}
+.btn__secondary {
+    background-color: transparent;
+    border: solid 1px $black;
+    color: $black;
+    font-family: "Audi";
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 20px;
+    transition: 0.5s all;
+    min-width: 140px;
+    &:disabled {
+        cursor: not-allowed;
+    }
+    &:hover:not(:disabled) {
+        border-color: $gray !important;
+        color: $gray !important;
+    }
+}
+
+.btn__edit {
+    background-color: red;
+    border: solid 1px $black;
+    color: $black;
+    font-family: "Audi";
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 20px;
+    transition: 0.5s all;
+    min-width: 140px;
+    &:disabled {
+        cursor: not-allowed;
+    }
+    &:hover:not(:disabled) {
+        border-color: $gray !important;
+        color: $gray !important;
+    }
+}
+
+.btn__text {
+    background-color: transparent;
+    border-color: transparent;
+    color: $black;
+    font-family: "Audi";
+    font-size: 14px;
+    font-weight: normal;
+    padding: 15px 20px;
+    transition: 0.2s all;
+    min-width: 140px;
+}
+
+// Cards
+
+.card__primary {
+    background-color: $white;
+    padding: 20px;
+}
+
+// Textarea
+
+textarea {
+    height: 100px;
+}
+
+// Main view
+.view-container {
+    padding: 0.5em 3.5em;
+}
+
+// Router outlet
+.router-outlet-display {
+    height: calc(100vh - 64px);
+}
+@media (max-width: $screen-md-min) {
+    .router-outlet-display {
+        height: calc(100vh - 56px) !important;
+    }
+    .view-container {
+        padding: 1em 1.5em;
+    }
+}

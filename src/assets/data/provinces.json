@@ -1,0 +1,210 @@
+[
+    {
+        "id": "Albacete",
+        "name": "Albacete"
+    },
+    {
+        "id": "Alicante",
+        "name": "Alicante"
+    },
+    {
+        "id": "Almería",
+        "name": "Almería"
+    },
+    {
+        "id": "Araba",
+        "name": "Araba"
+    },
+    {
+        "id": "Asturias",
+        "name": "Asturias"
+    },
+    {
+        "id": "Badajoz",
+        "name": "Badajoz"
+    },
+    {
+        "id": "Balears, Illes",
+        "name": "Balears, Illes"
+    },
+    {
+        "id": "Barcelona",
+        "name": "Barcelona"
+    },
+    {
+        "id": "Bizkaia",
+        "name": "Bizkaia"
+    },
+    {
+        "id": "Burgos",
+        "name": "Burgos"
+    },
+    {
+        "id": "Cantabria",
+        "name": "Cantabria"
+    },
+    {
+        "id": "Castellón",
+        "name": "Castellón"
+    },
+    {
+        "id": "Ceuta",
+        "name": "Ceuta"
+    },
+    {
+        "id": "Ciudad Real",
+        "name": "Ciudad Real"
+    },
+    {
+        "id": "Coruña, A",
+        "name": "Coruña, A"
+    },
+    {
+        "id": "Cuenca",
+        "name": "Cuenca"
+    },
+    {
+        "id": "Cáceres",
+        "name": "Cáceres"
+    },
+    {
+        "id": "Cádiz",
+        "name": "Cádiz"
+    },
+    {
+        "id": "Córdoba",
+        "name": "Córdoba"
+    },
+    {
+        "id": "Gipuzkoa",
+        "name": "Gipuzkoa"
+    },
+    {
+        "id": "Girona",
+        "name": "Girona"
+    },
+    {
+        "id": "Granada",
+        "name": "Granada"
+    },
+    {
+        "id": "Guadalajara",
+        "name": "Guadalajara"
+    },
+    {
+        "id": "Huelva",
+        "name": "Huelva"
+    },
+    {
+        "id": "Huesca",
+        "name": "Huesca"
+    },
+    {
+        "id": "Jaén",
+        "name": "Jaén"
+    },
+    {
+        "id": "León",
+        "name": "León"
+    },
+    {
+        "id": "Lleida",
+        "name": "Lleida"
+    },
+    {
+        "id": "Lugo",
+        "name": "Lugo"
+    },
+    {
+        "id": "Madrid",
+        "name": "Madrid"
+    },
+    {
+        "id": "Melilla",
+        "name": "Melilla"
+    },
+    {
+        "id": "Murcia",
+        "name": "Murcia"
+    },
+    {
+        "id": "Málaga",
+        "name": "Málaga"
+    },
+    {
+        "id": "Navarra",
+        "name": "Navarra"
+    },
+    {
+        "id": "Ourense",
+        "name": "Ourense"
+    },
+    {
+        "id": "Palencia",
+        "name": "Palencia"
+    },
+    {
+        "id": "Palmas, Las",
+        "name": "Palmas, Las"
+    },
+    {
+        "id": "Pontevedra",
+        "name": "Pontevedra"
+    },
+    {
+        "id": "Rioja, La",
+        "name": "Rioja, La"
+    },
+    {
+        "id": "Salamanca",
+        "name": "Salamanca"
+    },
+    {
+        "id": "Santa Cruz de Tenerife",
+        "name": "Santa Cruz de Tenerife"
+    },
+    {
+        "id": "Segovia",
+        "name": "Segovia"
+    },
+    {
+        "id": "Sevilla",
+        "name": "Sevilla"
+    },
+    {
+        "id": "Soria",
+        "name": "Soria"
+    },
+    {
+        "id": "Tarragona",
+        "name": "Tarragona"
+    },
+    {
+        "id": "Teruel",
+        "name": "Teruel"
+    },
+    {
+        "id": "Toledo",
+        "name": "Toledo"
+    },
+    {
+        "id": "Valencia",
+        "name": "Valencia"
+    },
+    {
+        "id": "Valladolid",
+        "name": "Valladolid"
+    },
+    {
+        "id": "Zamora",
+        "name": "Zamora"
+    },
+    {
+        "id": "Zaragoza",
+        "name": "Zaragoza"
+    },
+    {
+        "id": "Ávila",
+        "name": "Ávila"
+    }
+]

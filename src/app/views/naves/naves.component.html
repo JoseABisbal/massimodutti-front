@@ -1,0 +1,26 @@
+<div class="row nave-bar">
+  <div class="col-6 left">
+    <button type="button" (click)="crearNave()" class="btn btn-primary btn-sm btn-bar">
+      Crear nave
+    </button>
+  </div>
+  <div class="col-6 right">
+    <mat-paginator [length]="100" [pageSize]="10" [length]="totalNaves" (page)="onPageChange($event)">
+    </mat-paginator>
+  </div>
+</div>
+<div class="row">
+  <div class="col-2" *ngFor="let nave of naves" class="col-card card" style="width: 18rem;">
+    <img onerror="this.onerror=null;this.src='assets/images/banner_error_404.jpg';" [src]="nave.imagen"
+      class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{nave.nombre}}</h5>
+      <p class="card-text">{{nave.modelo}}</p>
+    </div>
+    <div class="card-footer">
+      <button type="button" (click)="editarNave(nave)" class="btn btn-primary btn-sm btn-bar">
+        Editar
+      </button>
+    </div>
+  </div>
+</div>

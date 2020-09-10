@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "Cumple usuario"
+    },
+    {
+        "id": 2,
+        "name": "Cumple vehículo"
+    },
+    {
+        "id": 3,
+        "name": "Nuevo en el SOA de la App"
+    },
+    {
+        "id": 4,
+        "name": "Cita previa solicitada recientemente"
+    },
+    {
+        "id": 5,
+        "name": "Cita previa empezada pero no terminada"
+    },
+    {
+        "id": 6,
+        "name": "Cliente cerca de la instalación (fencing portal Prestige)"
+    },
+    {
+        "id": 7,
+        "name": "Nuevo vehículo añadido"
+    },
+    {
+        "id": 8,
+        "name": "Inicio de asistencia reciente"
+    },
+    {
+        "id": 9,
+        "name": "Reciente contacto a través del chat"
+    },
+    {
+        "id": 10,
+        "name": "Vídeo Audi CAM recibido pero no consultado"
+    },
+    {
+        "id": 11,
+        "name": "Localización de su Audi activada"
+    },
+    {
+        "id": 12,
+        "name": "Perfil personalizado recientemente"
+    },
+    {
+        "id": 13,
+        "name": "Reciente paso por taller"
+    }
+]
