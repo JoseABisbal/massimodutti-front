@@ -35,7 +35,6 @@ export class AuthenticationService {
     }
     return of(false);
   }
-
   register(usuario: IUser): Observable<boolean> {
     if (usuario === null) {
       return of(false);
