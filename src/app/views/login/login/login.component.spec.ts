@@ -6,6 +6,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AuthenticationService } from 'src/app/core/auth/authentication.service';
 import { of } from 'rxjs';
+import { TopBarComponent } from 'src/app/shared/components/top-bar/top-bar.component';
 
 describe('LoginComponent', () => {
   let component: LoginComponent;
@@ -50,7 +51,9 @@ describe('LoginComponent', () => {
 
     const authService = TestBed.inject(AuthenticationService);
     spyOn(authService, 'login').and.returnValue(of(false));
-
+    authService.login('', '').subscribe(response => {
+      expect(response).toBe(false);
+    });
     component.ngOnInit();
 
     fixture.detectChanges();
