@@ -1,0 +1,82 @@
+<div class="view-container">
+  <div class="row">
+      <div class="col d-flex align-items-center justify-content-between flex-wrap mb-4">
+          <h1 class="mb-2">Naves</h1>
+      </div>
+  </div>
+
+  <div class="row mt-4">
+      <div class="col">
+
+
+                  <div class="row pt-4">
+                      <div class="col-12 mb-2">
+                          <h3 class="mb-2">Introducción</h3>
+                          <p>
+                              MD Developers recibió el encargo de preparar un prototipo para mostrar un listado de naves starwars solo para usuarios registrados. El prototipo gustó mucho y fue aprobado por el comité de la empresa como proyecto para 2019.
+
+                              Tu equipo acaba de recibir el encargo de adaptar este prototipo y convertirlo en un producto real.
+                              Tienes potestad para cambiar lo que quieras pero se deben cumplir unos mínimos.
+                          </p>
+
+                          <h3 class="mb-2">Requisitos mínimos</h3>
+
+                              <ul>
+                                  <li>El listado de naves solo puede ser visible para usuarios registrados.</li>
+                                  <li>El listado de naves debe ser consumido desde el api proporcionada por nuestro proveedor: https://swapi.co</li>
+                                  <li>Se deben poder registrar nuevos usuarios. No es necesario implementar la parte de servidor.</li>
+                              </ul>
+
+                          <h3 class="mb-2">Tareas</h3>
+
+                          <ul>
+                              <li>El listado de naves solo puede ser visible para usuarios registrados.</li>
+                              <li>El listado de naves debe ser consumido desde el api proporcionada por nuestro proveedor: https://swapi.co</li>
+                              <li>Se deben poder registrar nuevos usuarios. No es necesario implementar la parte de servidor.</li>
+                          </ul>
+
+                          <ul>
+                              <li> Migrar el prototipo actual a un proyecto nuevo con angular</li>
+                              <li>Listado naves</li>
+                              <li>Implementar correctamente la paginación del listado de naves</li>
+                              <li>Hay imágenes que no existen, en ese caso se debe mostrar un texto o imagen informando que no está disponible.</li>
+                              <li>Creación de una ficha de detalle de la nave</li>
+                              <li>Se quiere crear una ficha que se abra al hacer click sobre una de las naves que aparecen.</li>
+                              <li>Se debe implementar un botón de volver al listado</li>
+                              <li>Modernización del site. Cambia los estilos que creas pertinentes. El único criterio es que a dirección le gustaría que se pareciera lo máximo posible a la web de Massimo Dutti.</li>
+                              <li>Cuando entras por primera vez te debe redirigir a la página de naves</li>
+                              <li>Implementar una caché del lado de cliente para proteger la api, que evite realizar la misma petición contra el servidor durante 5 minutos.</li>
+                              <li>Implementar un menú para los usuarios registrados. Este menú debe permitir cambiar de página. Crea una página de prueba para comprobar que la navegación funciona</li>
+                              <li>Tests unitarios: Selecciona algun componente o servicio y aplicale testing. La idea es que nos demuestres tus conocimientos de testing mas allá de los que ofrece angular al ejecutar un comando de ng-cli.</li>
+                          </ul>
+                      </div>
+                  </div>
+
+
+                  <div class="row pt-4">
+                      <div class="col-12 mb-2">
+                          <p>
+                              En esta sección pongo comentarios que considero necesarios de acuerdo con las tareas que se han solicitado.
+                          </p>
+                              <ul class="summary">
+                                  <li>La API proporcionada no es válida (https://swapi.co). Buscando por internet he encontrado ésta: https://swapi.dev </li>
+                                  <li>Con relación a los UnitTests los he intentado dejar por encima de 80% (Por lo general, se considera un buen servicio cualquier codigo con cobertura por encima del 80%, como así se refleja en la prueba entregada)</li>
+                                  <li>Se han ejecutado los comandos: <br>
+                                      ng-lint (detección de errores de programación y de estilos) <br>
+                                      ng test --code-coverage (Ejecución de Tests y generación de report de cobertura) <br>
+                                      ng build --prod (Generación de los bundles para los entornos de producción)<br>
+                                  </li>
+                                  <li>Con relación al paginado que ofrece la api, comentar que ese tipo de implementación esta bastante desfasada y actualmente no se hace asi.
+                                      Como consecuencia, la implementación que he hecho no es más que el resultado de la integración con la misma.</li>
+                              </ul>
+
+                      </div>
+                  </div>
+
+
+
+      </div>
+
+  </div>
+
+</div>
