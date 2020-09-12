@@ -24,8 +24,7 @@ describe('AuthenticationService', () => {
       nombre: 'jose',
       apellidos: 'bisbal',
       usuario: 'jbisbal',
-      clave: '123',
-      roles: ['ADMIN']
+      clave: '123'
     };
 
     // act
@@ -49,8 +48,7 @@ describe('AuthenticationService', () => {
       nombre: 'jose',
       apellidos: 'bisbal',
       usuario: 'jbisbal',
-      clave: '123',
-      roles: ['ADMIN']
+      clave: '123'
     };
 
     // act
@@ -89,8 +87,7 @@ describe('AuthenticationService', () => {
       nombre: 'jose',
       apellidos: 'bisbal',
       usuario: 'jbisbal',
-      clave: '123',
-      roles: ['ADMIN']
+      clave: '123'
     };
 
     authenticationServiceSut.register(newUser).subscribe(
@@ -130,8 +127,7 @@ describe('AuthenticationService', () => {
       nombre: 'jose',
       apellidos: 'bisbal',
       usuario: 'jbisbal',
-      clave: '123',
-      roles: ['ADMIN']
+      clave: '123'
     };
 
     authenticationServiceSut.register(newUser)
@@ -159,8 +155,7 @@ describe('AuthenticationService', () => {
     nombre: 'jose',
     apellidos: 'bisbal',
     usuario: 'jbisbal',
-    clave: '123',
-    roles: ['ADMIN']
+    clave: '123'
   };
 
   //act
@@ -190,8 +185,7 @@ describe('AuthenticationService', () => {
     nombre: 'jose',
     apellidos: 'bisbal',
     usuario: 'jbisbal',
-    clave: '123',
-    roles: ['ADMIN']
+    clave: '123'
   };
 
   //act

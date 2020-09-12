@@ -64,4 +64,9 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('should call register', () => {
+    expect(component.register).toBeTruthy();
+  });
 });
