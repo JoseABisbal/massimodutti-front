@@ -78,3 +78,19 @@ img {
   height: 160px;
   width: calc(100% + 0px);
 }
+
+::ng-deep .btn-primary{
+  background: rgba(185,157,107,1);
+  border-color: #B99D6B;
+  border-radius: #B99D6B;
+}
+
+::ng-deep .btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:hover,
+.btn-primary:focus,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #B99D6B;
+  border-color: #B99D6B;
+}
