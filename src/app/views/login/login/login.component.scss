@@ -7,6 +7,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  background-image: url('/assets/images/login.jpg') !important;
 }
 
 .login-box {
@@ -26,4 +27,28 @@
   .container {
     width: 100%;
   }
+}
+
+.card{
+  background: rgba(0,0,0,0.5);
+}
+
+.form-check-label{
+  color: white;
+}
+
+.card-link{
+  color: white;
+}
+
+.btn-primary{
+  background: rgba(185,157,107,1);
+  border-color: #B99D6B;
+  border-radius: #B99D6B;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #B99D6B;
+  border-color: #B99D6B;
 }
